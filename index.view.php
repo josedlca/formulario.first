@@ -26,7 +26,7 @@
                 <div class="alert success">
                     <p>Envio Correctamente</p>
                 </div>
-            <?php elseif(!$enviado): ?>
+            <?php elseif(!$enviado && !empty($enviado)): ?>
                 <div class="alert error">
                     <?php echo $errores ?>
                 </div>
