@@ -33,14 +33,25 @@
         }
 
         if(!$errores){
-            $enviar_a = 'davidlcruz94@gmail.com';
-            $asunto = 'Enviado desde';
-            $mensaje_preparado = "De: $nombre \n";
-            $mensaje_preparado .= "Correo: $correo \n";
-            $mensaje_preparado .= "Mensaje: " . $mensaje; 
+            // $enviar_a = 'davidlcruz94@gmail.com';
+            // $asunto = 'Enviado desde';
+            // $mensaje_preparado = "De: $nombre \n";
+            // $mensaje_preparado .= "Correo: $correo \n";
+            // $mensaje_preparado .= "Mensaje: " . $mensaje; 
 
-            $mailVerification = mail($enviar_a, $asunto, $mensaje_preparado);
-            var_dump(mail('davidlcruz94@gmail.com', 'Mi título', 'hola'));
+            // $mailVerification = mail($enviar_a, $asunto, $mensaje_preparado);
+            // var_dump(mail('davidlcruz94@gmail.com', 'Mi título', 'hola'));
+            // $enviado = 'true';
+
+            $para      = 'armando.muerete1@gmail.com';
+            $titulo    = 'El título';
+            $mensaje   = 'Hola';
+            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
+                        'Reply-To: webmaster@example.com' . "\r\n" .
+                        'X-Mailer: PHP/' . phpversion();
+
+            mail($para, $titulo, $mensaje, $cabeceras);
+
             $enviado = 'true';
         }
     }
