@@ -33,13 +33,16 @@
         }
 
         if(!$errores){
-            $enviar_a = 'davidlcruz94@gmail.com';
+            $enviar_a = 'armando.muerete1@gmail.com';
             $asunto = 'Enviado desde';
             $mensaje_preparado = "De: $nombre \n";
             $mensaje_preparado .= "Correo: $correo \n";
             $mensaje_preparado .= "Mensaje: " . $mensaje; 
+            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
+                            'Reply-To: webmaster@example.com' . "\r\n" .
+                            'X-Mailer: PHP/' . phpversion();
 
-            $enviado = mail($enviar_a, $asunto, $mensaje_preparado);
+            $enviado = mail($enviar_a, $asunto, $mensaje_preparado,$cabeceras);
         }
     }
 

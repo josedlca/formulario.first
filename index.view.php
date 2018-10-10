@@ -26,6 +26,10 @@
                 <div class="alert success">
                     <p>Envio Correctamente</p>
                 </div>
+            <?php elseif(!$enviado): ?>
+                <div class="alert error">
+                    <?php echo $errores ?>
+                </div>
             <?php endif?>
 
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
