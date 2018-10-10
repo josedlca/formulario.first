@@ -43,6 +43,7 @@
                             'X-Mailer: PHP/' . phpversion();
 
             $enviado = mail($enviar_a, $asunto, $mensaje_preparado,$cabeceras);
+            var_dump($enviado);
         }
     }
 
