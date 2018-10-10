@@ -33,14 +33,14 @@
         }
 
         if(!$errores){
-            $enviar_a = 'armando.muerete1@gmail.com';
+            $enviar_a = 'davidlcruz94@gmail.com';
             $asunto = 'Enviado desde';
             $mensaje_preparado = "De: $nombre \n";
             $mensaje_preparado .= "Correo: $correo \n";
             $mensaje_preparado .= "Mensaje: " . $mensaje; 
 
             $mailVerification = mail($enviar_a, $asunto, $mensaje_preparado);
-            var_dump(mail('armando.muerete1@gmail.com', 'Mi título', 'hola'));
+            var_dump(mail('davidlcruz94@gmail.com', 'Mi título', 'hola'));
             $enviado = 'true';
         }
     }
