@@ -50,9 +50,7 @@
                         'Reply-To: webmaster@example.com' . "\r\n" .
                         'X-Mailer: PHP/' . phpversion();
 
-            mail($para, $titulo, $mensaje, $cabeceras);
-            var_dump(mail('armando.muerete1@gmail.com', 'Mi título', 'hola'));
-            $enviado = 'true';
+            $enviado = mail($para, $titulo, $mensaje, $cabeceras);
         }
     }
 
