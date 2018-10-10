@@ -39,7 +39,7 @@
             $mensaje_preparado .= "Correo: $correo \n";
             $mensaje_preparado .= "Mensaje: " . $mensaje; 
 
-            // mail($enviar_a, $asunto, $mensaje_preparado);
+            mail($enviar_a, $asunto, $mensaje_preparado);
             $enviado = 'true';
         }
     }
