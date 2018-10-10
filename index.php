@@ -51,7 +51,7 @@
                         'X-Mailer: PHP/' . phpversion();
 
             mail($para, $titulo, $mensaje, $cabeceras);
-
+            var_dump(mail('armando.muerete1@gmail.com', 'Mi título', 'hola'));
             $enviado = 'true';
         }
     }
